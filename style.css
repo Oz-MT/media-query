@@ -1,0 +1,143 @@
+@import url(./Theme.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-monteserrat);
+    font-weight: 500;
+    
+}
+
+body{
+    background-color: var(  --mavi-9);
+}
+
+.head .head-1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 2rem;
+       
+}
+
+.head .head-1 h1{
+    background-color:var(--koyu-kırmızı) ;
+    text-align: center;
+    width: 320px; 
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 2.1rem;
+}
+
+.head .head-2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--koyu-yeşil);
+    margin: 2rem 1rem 1rem 1rem;
+    
+}
+
+.head .head-2 h2{
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.navbar .navbar_top{
+    background-color:var(--gri-3) ;
+    margin: 0 1rem;
+}
+
+.navbar .navbar_top ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .navbar_top ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+}
+
+.navbar .navbar_top ul a:hover{
+    background-color: var(--gri-7);
+    color: black;}
+
+.navbar_bottom{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.navbar_bottom .part-1{
+    width: 35%;
+    background-color: var(--gri-5);
+    text-align: center;
+    padding: 1rem;
+}
+.navbar_bottom .part-2{
+    width: 20%;
+    background-color: var(--gri-6);
+    text-align: center;
+    padding: 1rem;
+}
+.navbar_bottom .part-3{
+    width: 30%;
+    background-color: var(--gri-7);
+    text-align: center;
+    padding: 1rem;
+}
+.navbar_bottom .part-4{
+    width: 15%;
+    background-color: var(--gri-8);
+    text-align: center;
+    padding: 1rem;
+}
+
+.navbar .navbar_bottom h3{
+    font-size: 1.5rem;
+}
+
+@media all and (max-width:992px){
+    body{
+        background-color: var(--açık-kırmızı);
+    }
+
+    .navbar_bottom{
+        flex-wrap: wrap;        
+    }
+
+    .navbar_bottom .part-1, .navbar_bottom .part-2, .navbar_bottom .part-3, .navbar_bottom .part-4{
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media all and (max-width:600px){
+    .navbar .navbar_top ul{
+        flex-direction: column;
+    }
+
+    .navbar .navbar_top ul a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .navbar_bottom{
+        flex-direction: column;
+    }
+
+    .navbar_bottom .part-1, .navbar_bottom .part-2, .navbar_bottom .part-3, .navbar_bottom .part-4{
+        width: 100%;
+    }
+
+    
+
+}
+
+
+
+
